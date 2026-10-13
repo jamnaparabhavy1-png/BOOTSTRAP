@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="d-flex">
+    <div class="side" style="width: 455px;">
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling">.......</button>
+
+        <div class="offcanvas offcanvas-start show text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false"
+            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-center ms-auto" id="offcanvasScrollingLabel">Open Admin</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="mb-3"><i class="bi bi-clipboard2-data me-3"></i> Dashboard</div>
+                <div class="mb-3"><i class="bi bi-file-earmark-fill me-3"></i> Pages</div>
+                <div class="mb-3"><i class="bi bi-hdd-stack-fill me-3"></i> Admin</div>
+                <div class="mb-3"><i class="bi bi-gear me-3"></i> Hlpers</div>
+                <div class="mb-3"><i class="bi bi-file-earmark-fill me-3"></i> Media Maneger</div>
+                <div class="mb-3"><i class="bi bi-toggle-on me-3"></i> config</div>
+                <div class="mb-3"><i class="bi bi-sliders2 me-3"></i> Tester</div>
+                <div class="mb-3"><i class="bi bi-back me-3"></i> Designer</div>
+            </div>
+        </div>
+    </div>
+    <div class="right w-75 mx-3">
+        <div class="d-flex justify-content-between align-items-center gap-3 mb-4">
+            <div class="fs-5"><i class="bi bi-list"></i></div>
+            <div class="fs-5"><i class="bi bi-person-circle"></i><span> Administrator</span></div>
+        </div>
+        <div class="shadow p-3 mb-5 bg-body-secondary rounded h-100 w-100">
+            <div class="d-flex justify-content-between">
+                <div class="fs-3">Page <small class="text-secondary fs-6">List</small></div>
+                <div><i class="bi bi-house-fill"></i>Home / Pages</div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div class="c mt-3">
+                    <span class="badge text-bg-success fs-6">+ New</span>
+                    <span class="badge text-bg-primary fs-6">2 items selected <i class="bi bi-chevron-down"></i></span>
+                    <span class="badge text-bg-primary fs-6"><i class="bi bi-funnel-fill ms-2"></i> Filter</span>
+                    <span class="badge text-bg-danger fs-6">Report</span>
+                </div>
+                <div class="c2">
+                    <span class="badge text-bg-primary fs-6"><i class="bi bi-cloud-download"></i> Export <i
+                            class="bi bi-chevron-down"></i></span>
+                    <span class="badge text-bg-primary fs-6"><i class="bi bi-grid-fill"></i> <i
+                            class="bi bi-chevron-down"></i></span>
+                </div>
+            </div>
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th scope="col"><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                        <th scope="col">ID <i class="bi bi-caret-up-fill text-primary"></i></th>
+                        <th scope="col">title</th>
+                        <th scope="col">Date <i class="bi bi-funnel-fill text-primary"></i> <i
+                                class="bi bi-caret-down-fill text-primary"></i></th>
+                        <th scope="col">Tags</th>
+                        <th scope="col">Star</th>
+                        <th scope="col">Created at</th>
+                        <th scope="col">Updated at</th>
+                        <th scope="col" class="text-center">Action</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                        <td>1</td>
+                        <td>Homepage</td>
+                        <td></td>
+                        <td><input type="checkbox" class="form-check-input bg-secondary" id="exampleCheck1"
+                                checked>...<span class="badge text-bg-success">New</span>..<span
+                                class="badge text-bg-success">special</span></td>
+                        <td><i class="bi bi-star"></i></td>
+                        <td>2022-06-25 00:51:01</td>
+                        <td>2022-06-25 14:30:01</td>
+                        <td><i class="bi bi-pencil-fill"></i> <i class="bi bi-eye-fill ms-3"></i> <i
+                                class="bi bi-trash-fill ms-3"></i> <i class="bi bi-flask ms-3"></i></td>
+                    </tr>
+                    <tr class="table-warning">
+                        <th><input type="checkbox" class="form-check-input" id="exampleCheck1" checked></th>
+                        <td>2</td>
+                        <td>Blog</td>
+                        <td>2022-06-25</td>
+                        <td><input type="checkbox" class="form-check-input bg-secondary" id="exampleCheck1"
+                                checked>..<span class="badge text-bg-success">New</span></td>
+                        <td><i class="bi bi-star"></i></td>
+                        <td>2022-06-25 00:51:01</td>
+                        <td>2022-06-25 14:30:01</td>
+                        <td><i class="bi bi-pencil-fill"></i> <i class="bi bi-eye-fill ms-3"></i> <i
+                                class="bi bi-trash-fill ms-3"></i> <i class="bi bi-flask ms-3"></i></td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                        <td>3</td>
+                        <td>About us</td>
+                        <td>2022-06-25</td>
+                        <td><input type="checkbox" class="form-check-input bg-secondary" id="exampleCheck1" checked>
+                        </td>
+                        <td><i class="bi bi-star-fill text-secondary"></i></td>
+                        <td>2022-06-25 00:51:01</td>
+                        <td>2022-06-25 14:30:01</td>
+                        <td><i class="bi bi-pencil-fill"></i> <i class="bi bi-eye-fill ms-3"></i> <i
+                                class="bi bi-trash-fill ms-3"></i> <i class="bi bi-flask ms-3"></i></td>
+
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                        <td>4</td>
+                        <td>Contact</td>
+                        <td>2022-06-25</td>
+                        <td><input type="checkbox" class="form-check-input bg-secondary" id="exampleCheck1"
+                                checked>...<span class="badge text-bg-success">code</span>..<span
+                                class="badge text-bg-success">Special</span></td>
+                        <td><i class="bi bi-star-fill text-secondary"></i></td>
+                        <td>2022-06-25 00:51:01</td>
+                        <td>2022-06-25 14:30:01</td>
+                        <td><i class="bi bi-pencil-fill"></i> <i class="bi bi-eye-fill ms-3"></i> <i
+                                class="bi bi-trash-fill ms-3"></i> <i class="bi bi-flask ms-3"></i></td>
+                    </tr>
+                    <tr>
+                        <th><input type="checkbox" class="form-check-input" id="exampleCheck1"></th>
+                        <td>5</td>
+                        <td>Cases</td>
+                        <td></td>
+                        <td><input type="checkbox" class="form-check-input bg-secondary" id="exampleCheck1" checked>
+                        </td>
+                        <td><i class="bi bi-star"></i></td>
+                        <td>2022-06-25 00:51:01</td>
+                        <td>2022-06-25 14:30:01</td>
+                        <td><i class="bi bi-pencil-fill"></i> <i class="bi bi-eye-fill ms-3"></i> <i
+                                class="bi bi-trash-fill ms-3"></i> <i class="bi bi-flask ms-3"></i></td>
+                    </tr>
+                    <tr class="table-warning">
+                        <th><input type="checkbox" class="form-check-input" id="exampleCheck1" checked></th>
+                        <td>6</td>
+                        <td>Clients</td>
+                        <td>2022-06-25</td>
+                        <td><input type="checkbox" class="form-check-input bg-secondary" id="exampleCheck1"
+                                checked>...<span class="badge text-bg-success">Special</span></td>
+                        <td><i class="bi bi-star"></i></td>
+                        <td>2022-06-25 00:51:01</td>
+                        <td>2022-06-25 14:30:01</td>
+                        <td><i class="bi bi-pencil-fill"></i> <i class="bi bi-eye-fill ms-3"></i> <i
+                                class="bi bi-trash-fill ms-3"></i> <i class="bi bi-flask ms-3"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer class="d-flex justify-content-between aling-items-baseline">
+            <div>Showing <b>1</b> to <b>6</b> entries</div>
+            <div class="d-flex gap-3">
+                <div>
+                    <label for="">show</label>
+                    <select class="rounded-1 mt-2" id="" style="width: 70px;">
+                        <option value="">20</option>
+                        <option value="">19</option>
+                        <option value="">18</option>
+                        <option value="">17</option>
+                    </select>
+                </div>
+                <div class="d-flex gap-2">
+                    <nav aria-label="Page navigation example" class="d-flex gap-3">
+                        <label for="" class="mt-1">entries</label>
+                        <ul class="pagination">
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
